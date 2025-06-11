@@ -1,4 +1,4 @@
 .PHONY: sync edit
 
 sync:
-	databricks bundle generate dashboard --existing-path '/Workspace/Users/{{user_name}}/{{.dashboard_path}}.lvdash.json'
+	databricks bundle generate dashboard --existing-path '/Workspace/Users/{{user_name}}/{{.dashboard_path}}.lvdash.json' --resource-dir /tmp --force
