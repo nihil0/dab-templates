@@ -7,6 +7,10 @@ bundle:
 include:
   - resources/*.yml
 
+variables:
+  warehouse_id:
+    type: string
+
 targets:
   dev:
     mode: development
@@ -18,4 +22,4 @@ targets:
     mode: production
     workspace:
       host: https://path/to/prod/workspace #TODO: Change this!! 
-      root_path: /Workspace/Users/{{user_name}}/.bundle/${bundle.name}
+      root_path: /Workspace/Users/${user}/.bundle/${bundle.name}
