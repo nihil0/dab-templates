@@ -17,9 +17,20 @@ targets:
     default: true
     workspace:
       host: {{workspace_host}}
+    variables:
+      warehouse_id:
+        type: string
+        description: SQL Warehouse ID
+        default: #TODO: Enter the SQL Warehouse ID for the dev workspace
+
 
   prod:
     mode: production
     workspace:
       host: https://path/to/prod/workspace #TODO: Change this!! 
       root_path: /Workspace/Users/${user}/.bundle/${bundle.name}
+    variables:
+      warehouse_id:
+        type: string
+        description: SQL Warehouse ID
+        default: #TODO: Enter the SQL Warehouse ID for the prod workspace
