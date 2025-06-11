@@ -9,6 +9,6 @@ The following templates are available:
 
 Initialise the template with 
 ```
-databricks bundle init --template-dir https://github.com/nihil0/dab-templates/{template_dir}
+databricks bundle init https://github.com/nihil0/dab-templates --template-dir <template>
 ```
 See above for which templates are available.
